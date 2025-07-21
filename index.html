@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Заявка на регистрацию</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <h2>Заявка на регистрацию для мероприятия</h2>
+      <button class="modal-close" id="closeModal">
+        <img src="images/close.svg" alt="Закрыть" />
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <!-- Тип мероприятия -->
+      <div class="form-group">
+        <label>Тип мероприятия</label>
+        <div class="select-wrapper">
+          <select required>
+            <option value="">Выберите вид мероприятия</option>
+            <option value="концерт">Концерт</option>
+            <option value="лекция">Лекция</option>
+          </select>
+          <img src="images/dropdown.svg" class="dropdown-icon" alt="" />
+        </div>
+        <div class="caption-hint">Укажите вид мероприятия</div>
+      </div>
+
+      <!-- ФИО -->
+      <div class="form-group">
+        <label>ФИО</label>
+        <input type="text" placeholder="Введите ФИО" required />
+        <div class="caption-hint">Введите ваше полное имя</div>
+      </div>
+
+      <!-- Имейл -->
+      <div class="form-group">
+        <label>Имейл</label>
+        <input type="email" placeholder="Введите имейл" required />
+        <div class="caption-hint">Например: name@mail.ru</div>
+      </div>
+
+      <!-- Телефон -->
+      <div class="form-group">
+        <label>Номер телефона</label>
+        <input type="tel" placeholder="+7 777 77 77" required />
+        <div class="caption-hint">Укажите номер в формате +7 ...</div>
+      </div>
+
+      <!-- Добавить друга -->
+      <button type="button" id="addFriend" class="btn-add">
+        <img src="images/plus.svg" alt="+" /> Добавить друга
+      </button>
+      <div id="friendsContainer"></div>
+
+      <!-- Предпочитаемый вид связи -->
+      <div class="form-group">
+        <label>Предпочитаемый вид связи</label>
+        <div class="select-wrapper">
+          <select required>
+            <option value="">Выберите предпочитаемый вид связи</option>
+            <option value="телефон">Телефон</option>
+            <option value="email">Email</option>
+          </select>
+          <img src="images/dropdown.svg" class="dropdown-icon" alt="" />
+        </div>
+        <div class="caption-hint">Как с вами лучше связаться</div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" id="prevBtn">Назад</button>
+      <button type="button" id="nextBtn">Дальше</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
