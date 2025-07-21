@@ -29,7 +29,7 @@
 
 Откройте терминал или командную строку и выполните: `git clone https://github.com/Annett-a/Summer-practice.git`
 
- 2. "Проваливаемся" `cd ./HW1`
+ 2. "Проваливаемся" `cd ./hw1`
 
  3. Скомпилируйте Программу `javac Main.java`
 
