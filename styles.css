@@ -1,4 +1,4 @@
-/* === Сброс и базовые шрифты === */
+/* Сброс и базовые шрифты */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,7 +17,7 @@ body {
   background: #f5f5f5;
 }
 
-/* === Модалка === */
+/* Модалка */
 .modal {
   max-width: 640px;
   margin: 600px auto;
@@ -68,7 +68,7 @@ body {
   color: #8A8FA8;
 }
 
-/* === Фиксированная высота полей === */
+/* Фиксированная высота полей */
 .form-group input,
 .select-wrapper select {
   width: 100%;
@@ -151,18 +151,18 @@ body {
   color: #fff;
 }
 
-/* === Подсказка под полем === */
+/* Подсказка под полем */
 .caption-hint {
-  margin-top: 10px;       /* gap 10px */
-  width: 600px;           /* fill (600×16) */
-  height: 16px;           /* hug(16px) */
+  margin-top: 10px;       
+  width: 600px;           
+  height: 16px;           
   font-family: "Inter", sans-serif;
-  font-size: 12px;        /* size 12px */
-  line-height: 16px;      /* line-height 16px */
-  color: #6C7393;         /* Contrast-secondary */
+  font-size: 12px;        
+  line-height: 16px;      
+  color: #6C7393;         
 }
 
-/* === Сообщение об ошибке === */
+/* Сообщение об ошибке */
 .error-hint {
   margin-top: 10px;
   width: 600px;
@@ -170,7 +170,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 12px;
   line-height: 16px;
-  color: #C91A03;         /* Error red */
+  color: #C91A03;        
   display: block;
 }
 

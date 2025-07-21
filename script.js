@@ -65,6 +65,5 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 
   if (valid) {
     console.log('Все поля заполнены — переходим дальше');
-    // сюда добавьте логику переключения шага
   }
 });
